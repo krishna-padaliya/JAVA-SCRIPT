@@ -1,0 +1,44 @@
+<!-- **Question:**You are building a simple music player application. You have a base 
+    class called `Instrument` with a method `playSound()`. Create two subclasses, `Guitar` 
+    and `Piano`, both inheriting from the `Instrument` class.
+
+In the `Guitar` class, override the `playSound()` method to print "Strumming the guitar 
+strings" to the console. In the `Piano` class, override the `playSound()` method to print 
+"Pressing the piano keys" to the console.
+
+Create an array of `Instrument` objects, including instances of both `Guitar` and `Piano`. 
+Iterate through the array and call the `playSound()` method for each object. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    class Instrument{
+        playSound(){
+            console.log("Play The Sound")
+        }
+    }
+    class Guitar extends Instrument{
+        playSound(){
+            console.log("Strumming the guitar strings")
+        }
+    }
+    class piano extends Instrument{
+        playSound(){
+            console.log("Pressing the piano keys")
+        }
+    }
+    let Sound = new Instrument();
+    let guitar = new Guitar()
+    let Piano = new piano()
+    Sound.playSound();
+    guitar.playSound();
+    Piano.playSound()
+</script>

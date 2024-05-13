@@ -1,0 +1,38 @@
+
+<!-- **Question:**Imagine you are building a simple online store. You have a `Product` class 
+representing products in the store. The `Product` class has properties `name` and `price`. 
+Create a new class called `DiscountedProduct` that inherits from the `Product` class. 
+The `DiscountedProduct` class should have an additional property called `discountPercentage` 
+representing the discount percentage on the product. Implement a method called 
+`calculateDiscountedPrice()` in the `DiscountedProduct` class that calculates and returns
+ the discounted price based on the original price and the discount percentage. Create an 
+ instance of `DiscountedProduct` with a name, price, and discount percentage, and then 
+ call the `calculateDiscountedPrice()` method to get the final discounted price. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    class product{
+        constructor(name,price){
+            this.name = name;
+            this.price = price;
+            this.discount = 100;
+        }
+    }
+    class Discountprice extends product{
+        DiscountPrice(){
+        this.final = this.price - this.discount
+        console.log("Discounted Final Price = ",this.final)
+    }
+    }
+    let finaldiscountvalue = new Discountprice("laptop",20000)
+    finaldiscountvalue.DiscountPrice();
+</script>

@@ -1,0 +1,40 @@
+<!-- **Question:**Imagine you are building a drawing application. You have a `Shape` class with a method `draw()`
+     that prints "Drawing a shape" to the console. Create two subclasses, `Circle` and `Square`, both inheriting
+      from the `Shape` class. Override the `draw()` method in both subclasses so that `Circle` prints "Drawing a 
+      circle" and `Square` prints "Drawing a square". Create instances of both `Circle` and `Square` classes and 
+      call the `draw()` method on each instance.  -->
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+      </head>
+      <body>
+        
+      </body>
+      </html>
+      <script>
+        class shape{
+        draw(){
+          console.log("Drawing a shape")
+        }
+        }
+        class Circle extends shape{
+            draw(){
+          console.log("Drawing a circle")
+        }
+        }
+        class square extends shape{
+            draw(){
+          console.log("Drawing a square")
+        }
+        }
+        let Shape=new shape()
+        Shape.draw()
+        let circle=new Circle()
+        circle.draw()
+        let Square=new square()
+        circle.draw()
+      </script>
+      
