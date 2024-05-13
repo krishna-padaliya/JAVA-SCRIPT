@@ -1,0 +1,34 @@
+<!-- **Question:**
+
+Write a JavaScript function `findLargestEven(numbers)` that takes an array of integers as input and returns the largest even number from the array. If there are no even numbers in the array, the function should return -1. Do not use loops or conditional statements (`if`, `else`, `for`, `while`, etc.). You can only use array methods and functions.
+
+**Example Usage:**
+
+```javascript
+console.log(findLargestEven([1, 2, 3, 4, 5, 6]));
+// Output: 6
+
+console.log(findLargestEven([1, 3, 5, 7, 9]));
+// Output: -1
+``` -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    console.log(Math.max(1, 2, 3, 4, 5, 6));
+
+    let findLargestEven = [1, 4, 5, 7, 9];
+    let evenNumbers = findLargestEven.indexOf((ele) => {
+     return ele % 2 == 0;
+});
+console.log(evenNumbers); 
+
+</script>
