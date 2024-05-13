@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corona_19</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <div id="corona">
+        <h4>Covid_19 Cases State Wise</h4>
+        <input type="text" placeholder="Enter Satate Name" id="name">
+        <button onclick="fetchdata()">Search</button>
+        <div id="main"></div>
+    
+    </center>
+    </div>
+</body>
+</html>
+<script>
+    function fetchdata(){
+        var Search = document.getElementById("name").value
+        fetch("https:/disease.sh/v3/covid-19/countries")
+        .then(function(res){
+            return res.json()
+        }).then(function(json){
+            console.log(json)
+            displaydata(json)
+        }).catch(function(error){
+            console.log("Invalid input")
+        })
+    }
+    function displaydata(data){
+        let count = document.getElementById("name").value
+        var name  = document.createElement("p")
+        for(var i = 0 ; i<=230; i++){
+            if(count == data[i].country){
+                name.innerHTML ="Country : "+ data[i].country;
+            }
+    }
+    var cs  = document.createElement("p")
+        for(var i = 0 ; i<=230; i++){
+            if(count == data[i].country){
+                cs.innerHTML ="Cases : "+ data[i].cases;
+            }
+    }
+    var deaths = document.createElement("p")          
+        for(var i = 0 ; i<=230; i++){
+            deaths.innerHTML ="deaths : "+data[i].deaths;
+    }
+    var recovered = document.createElement("p")          
+        for(var i = 0 ; i<=230; i++){
+            recovered.innerHTML ="deaths : "+data[i].recovered;
+    }
+        var todayCases = document.createElement("p")          
+        for(var i = 0 ; i<=230; i++){
+            todayCases.innerHTML ="TodayCases : "+data[i].todayCases;
+    }
+    var todayDeaths = document.createElement("p")          
+        for(var i = 0 ; i<=230; i++){
+            todayDeaths.innerHTML ="todayDeaths : "+data[i].todayDeaths;
+    }
+    var todayRecovered = document.createElement("p")          
+        for(var i = 0 ; i<=230; i++){
+            todayRecovered.innerHTML ="todayRecovered : "+data[i].todayRecovered;
+    }
+   
+    
+        document.querySelector("#main").append(name,cs,deaths,recovered,todayCases,todayDeaths,todayRecovered)
+    }
+</script>
