@@ -1,0 +1,37 @@
+<!-- **Question:**Imagine you have an array of numbers. Write a JavaScript function that takes an array of integers as input and returns the sum of all the even numbers in the array.
+
+For example, if the input array is `[1, 2, 3, 4, 5, 6]`, the function should return `12` because `2 + 4 + 6 = 12`.
+
+Write the JavaScript function to solve this problem. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let array=[1,2,3,4,5,6,7,8,9,10]
+    let store=[]
+    for(let i=0; i<=array.length; i++)
+    {
+        if(array[i]%2==0)
+        {
+            store.push(array[i])
+        }
+    }
+    for(let i=0; i<store.length; i++)
+    {
+        console.log(store[i]);
+    }
+    let sum=0;
+    for(let i=0; i<store[i]; i++)
+    {
+        sum = store[i] + sum
+    }
+    console.log("Even number of sum is:"+sum)
+</script>

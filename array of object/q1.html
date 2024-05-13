@@ -1,0 +1,37 @@
+<!-- **Question:**Imagine you have an array of objects representing books in a library. Each object has the following properties: `title` (the title of the book), `author` (the author's name), and `year` (the year the book was published).
+
+
+
+Write a JavaScript function to find and return the titles of all books in the library that were published before a 2000 . The function should take the `library` array and a `year` as parameters and return an array of book titles that meet the condition. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let book=[
+    {title:"The India Story",author:"Bimal Jalal",year:1999},
+        {title:"Listen to Your Heart: The London Adventure",author:"Ruskin Bond",year:2021},
+        {title:"A Place Called Home'",author:"Preeti Shenoy",year:2024},
+        {title:"My Life as a Comrade",author:"K.K. Shailaja and Manju Sara Rajan",year:2011},
+        {title:"Kargil: Ek Yatri Ki Jubani",author:"Shri Rishi Raj",year:2000}
+    ]
+    let story=[]
+    for(let i=0; i<book.length; i++)
+    {
+        if(book[i].year<=2000)
+        {
+            story.push(book[i])
+        }
+    }
+    for(i=0; i<story.length; i++)
+    {
+        console.log(story[i].title+" - "+story[i].author+" - "+story[i].year)
+    }
+</script>
