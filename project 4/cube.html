@@ -1,0 +1,26 @@
+<!-- Write a JavaScript program that prompts the user for a number, calculates its cube, 
+    and displays the result in the browser as follows:
+
+The cube of the number is: [result]
+Replace [result] with the actual cube of the number -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cube</title>
+</head>
+<body>
+    <h1>The cube of the number is:</h1>
+    <h1 id="result">Result</h1>
+</body>
+</html>
+
+<script>
+const a=5;
+const cube=a*a*a;
+
+var result = document.getElementById("result");
+result.innerHTML = cube;
+</script>

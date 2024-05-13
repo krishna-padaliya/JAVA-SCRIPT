@@ -1,0 +1,28 @@
+<!-- Write a JavaScript program+ that prompts the user for three numbers, adds them 
+    together using arithmetic operators, and displays the result in the browser as follows:
+
+As Sum of three numbers is: [result]
+Replace [result] with the actual sum. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmethic sum</title>
+</head>
+<body>
+    <h1>As Sum of three numbers is:</h1>
+    <h1 id="result">Result</h1>
+</body>
+</html>
+
+<script>
+const a=5;
+const b=5;
+const c=5;
+const sum=a+b+c;
+
+var result = document.getElementById("result");
+result.innerHTML =sum; 
+</script>

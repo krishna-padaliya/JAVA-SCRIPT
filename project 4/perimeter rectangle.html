@@ -1,0 +1,28 @@
+<!-- Write a JavaScript program that prompts the user for the length and width of a rectangle,
+     calculates its perimeter, and displays the result in the browser as follows:
+
+The perimeter of the rectangle is: [result]
+Replace [result] with the actual square of the number. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perimeter rectangle</title>
+</head>
+<body>
+    <h1>The perimeter of the square is:</h1>
+    <h1 id="result">Result</h1>
+</body>
+</html>
+
+<script>
+    const width=5;
+    const height=15;
+    const area = 2*(width+height);
+
+var result = document.getElementById("result");
+ result.innerHTML = area;
+   
+</script>
