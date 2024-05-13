@@ -1,0 +1,37 @@
+<!-- Find number of days in a given month -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let mon=2;
+    if(mon==2)
+    {
+        if(((mon%4==0)&&(mon%100!=0))||(mon%400==0))
+        {
+            console.log("this month 29 days!")
+        }
+        else
+        {
+            console.log("this month  28 days!")
+        }
+    }
+    else
+    {
+        if(mon==1 || mon==3 || mon==5 || mon==7 || mon==9 || mon==11)
+        {
+            console.log("This month 31 days!")
+        }
+        else
+        {
+            console.log("This month 30 days!")
+        }
+    }
+</script>
