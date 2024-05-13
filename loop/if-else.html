@@ -1,0 +1,61 @@
+<!-- **Question Prompt:**
+
+Write a JavaScript program to handle reception logic. Prompt the user to enter the number of 
+guests attending the reception. Implement the following logic:
+
+- If the number of guests is 0, print in the console: "It seems like no one is attending the 
+reception. Are you sure?"
+- If the number of guests is 1, print: "Great! There is one guest attending the reception."
+- If the number of guests is 2, print: "Perfect! You and one other person will be attending
+ the reception."
+- If the number of guests is more than 2, print the number of guests and "guests will be 
+attending the reception."
+- If the input is invalid (not a number or negative number), print: "Invalid input. Please 
+enter a valid number of guests."
+
+After determining the number of guests, run a loop for the number of guests present and print: 
+"Thank you, guest #[guestNumber], for attending the reception!" During this loop,
+ skip thanking guests if their number is 3.
+
+Finally, regardless of the number of guests, print: "Reception logic executed successfully." -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+const Guests = 5
+if ( Guests < 0) {
+  console.log("Invalid input. Please enter a valid number of guests.");
+} else {
+  if (Guests === 0) {
+    console.log("It seems like no one is attending the reception. Are you sure?");
+  } 
+  else if (Guests === 1) {
+    console.log("Great! There is one guest attending the reception.");
+  }
+   else if (Guests === 2) {
+    console.log("Perfect! You and one other person will be attending the reception.");
+  }
+   else {
+    console.log(" guests will be attending the reception.");
+  }
+
+  for (let guestMember = 1; guestMember <= Guests; guestMember++) {
+    if (guestMember != 3) {
+      console.log("Thank you,  guests"+guestMember);
+      continue;
+    }
+    
+  }
+
+  console.log("Reception logic executed successfully.");
+}
+</script>
