@@ -1,0 +1,56 @@
+<!-- 1. Complete the functionality in the file selectors.html
+On clicking the button Change H1 the colour of first <h1> should turn to red
+On clicking the button Change H3 the colour of all <h3> should turn to green
+On clicking the button Change H5 the colour of all <h5> should turn to blue
+On clicking Change Green all the elements with the class green should change to green
+On clicking Change Blue all the elements with the class blue should change to blue
+On clicking Change Red all the elements with the class red should change to red -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello!!</h1>
+    <hr>
+    <h3>hello!!</h3>
+    <h3>hello!!</h3>
+    <h3>hello!!</h3>
+    <hr>
+    <h5>hello!!</h5>
+    <h5>hello!!</h5>
+    <h5>hello!!</h5>
+    <h5>hello!!</h5>
+    <h5>hello!!</h5>
+    <hr>
+    <button id="btn1">change to Red</button>
+    <button onclick="btn2()">change to green</button>
+    <button onclick="btn3()">change to blue</button>
+</body>
+</html>
+<script>
+    var button1=document.getElementById("btn1").addEventListener("click",chgh1);
+    function chgh1()
+    {
+        var h1=document.querySelector("h1")
+        h1.style.color="red"
+    }
+    function btn2()
+    {
+        var h3=document.querySelectorAll("h3")
+        for(var i=0; i<h3.length; i++)
+        {
+            h3[i].style.color="green";
+        }
+    }
+    function btn3()
+    {
+        var h5=document.querySelectorAll("h5")
+        for(var i=0; i<h5.length; i++)
+        {
+            h5[i].style.color="blue";
+        }
+    }
+</script>
