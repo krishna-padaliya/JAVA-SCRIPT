@@ -1,0 +1,29 @@
+<!-- **Question 4: Sum of Two Numbers**
+Write a JavaScript function that takes two numbers as parameters. If the sum of the numbers is equal to 10, throw an error with the message "Sum is 10". -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function sum(a,b){
+        if(a+b == 10)
+        {
+            throw "Addition is 10"
+        }
+            return a+b
+    }
+    try{
+        var ans = sum(5,5)
+        console.log("Addition is:",ans);
+    }
+    catch(error){
+        console.error("Error :",error)
+    }
+    </script>

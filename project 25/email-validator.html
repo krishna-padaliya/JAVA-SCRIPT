@@ -1,0 +1,29 @@
+<!-- 
+**Question 1: Email Validation**
+Write a JavaScript function that takes an email string as a parameter. 
+If the email string does not contain the "@" symbol, throw an error with the message
+ "Email should have @". -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    
+ </body>
+ </html>
+ <script>
+    let email = "krishna.com"
+    for(let i = 0 ; i<email.length ; i++){
+        if(email.charAt(i) != "@"){
+            throw "Error : @ is not defined "
+        }
+    }
+    try{
+        console.log(email)
+    }catch(error){
+        console.error("Error:",error.message)
+    }
+</script>

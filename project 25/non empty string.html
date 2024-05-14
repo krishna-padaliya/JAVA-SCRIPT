@@ -1,0 +1,28 @@
+<!-- **Question 2: Non-empty String**
+Write a JavaScript function that takes a string as a parameter. If the string is empty, throw an error with the message "String must contain some characters". -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function str(s){
+         if(s === " "){
+            throw "Error : tring must contain some characters"
+         }
+         return s
+    }
+    try{
+        let ans = str(" ")
+        console.log(ans);
+    }
+    catch(error){
+        console.error("Error ",error)
+    }
+</script>
