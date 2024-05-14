@@ -1,0 +1,84 @@
+<!-- 1. Mini Calculator
+Create a mini calculator application, which has following functionalities
+Addition
+Subtraction
+Division
+Multiplication
+Your app should have
+Four input boxes which should take four numbers from the user.
+Four Buttons with following text content
+Add
+Subtract
+Divide
+Multiply -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter First Value" id="num1">
+    <input type="text" placeholder="Enter Second Value" id="num2">
+    <input type="text" placeholder="Enter Third Value" id="num3">
+    <input type="text" placeholder="Enter Fourth Value" id="num4">
+    <br><br>
+    <h2 id="ans">Answer</h2>
+    <br><br>
+    <hr>
+    <button onclick="add()">Addition</button>
+    <button onclick="sub()">Subtraction</button>
+    <button onclick="mul()">Multiplication</button>
+    <button onclick="div()">Division</button>
+</body>
+</html>
+<script>
+    function add()
+    {
+        var n1=document.getElementById("num1").value;
+        var n2=document.getElementById("num2").value;
+        var n3=document.getElementById("num3").value;
+        var n4=document.getElementById("num4").value;
+
+        var add=+n1 + +n2 + +n3 + +n4;
+        document.getElementById("ans").innerHTML=add;
+        ans.style.color="blue"
+    }
+
+    function sub()
+    {
+        var n1=document.getElementById("num1").value;
+        var n2=document.getElementById("num2").value;
+        var n3=document.getElementById("num3").value;
+        var n4=document.getElementById("num4").value;
+
+        var sub=+n1 - +n2 - +n3 - +n4;
+        document.getElementById("ans").innerHTML=sub;
+        ans.style.color="blue"
+    }
+
+    function mul()
+    {
+        var n1=document.getElementById("num1").value;
+        var n2=document.getElementById("num2").value;
+        var n3=document.getElementById("num3").value;
+        var n4=document.getElementById("num4").value;
+
+        var mul=+n1 * +n2 * +n3 * +n4;
+        document.getElementById("ans").innerHTML=mul;
+        ans.style.color="blue"
+    }
+
+    function div()
+    {
+        var n1=document.getElementById("num1").value;
+        var n2=document.getElementById("num2").value;
+        var n3=document.getElementById("num3").value;
+        var n4=document.getElementById("num4").value;
+
+        var div=+n1 / +n2 / +n3 / +n4;
+        document.getElementById("ans").innerHTML=div;
+        ans.style.color="blue"
+    }
+</script>
