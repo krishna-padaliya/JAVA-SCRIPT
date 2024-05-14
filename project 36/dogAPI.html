@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ #btn{
+    width: 180px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    margin-bottom: 50px;
+}
+#main img{
+    width: 300px;
+    height: 300px;
+}
+    </style>
+</head>
+<body>
+    <img src="https://dog.ceo/img/dog-api-logo.svg" alt=""><br>
+    <button onclick="fetchData()" id="btn">Fetch</button>
+    <div id="main"></div>
+
+</body>
+</html>
+
+<script>
+function fetchData(){
+    fetch('https://dog.ceo/api/breeds/image/random')
+    .then(function(res){
+        return res.json()
+    }).then(function(json){
+        console.log(json)
+        displaydata(json)
+    }).catch(function(err){
+        console.log("invalid")
+    })
+}
+
+
+function displaydata(data){
+    document.getElementById("main").innerText = ""
+    var message = document.createElement('img')
+    message.src = data.message
+
+    document.querySelector("#main").append(message)
+}
+</script>
