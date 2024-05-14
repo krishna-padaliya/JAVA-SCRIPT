@@ -1,0 +1,26 @@
+<!-- Create an array of objects, where each object represents a person. 
+Each person should have the following properties: `firstname`, `lastname`, and `age`.
+ Write a JavaScript program to create the array with at least 4 objects. Then, use a loop to 
+ iterate through the array and print both the keys and values of each object. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    
+ </body>
+ </html>
+ <script>
+    let person =[
+        {num:1,firstname:"krishna",lastname:"padalliya",age:20},
+        {num:2,firstname:"krina",lastname:"maheta",age:20},
+        {num:3,firstname:"krishma",lastname:"shah",age:20}
+    ]
+    let ans = person.map((el)=>{
+        return el.num+"="+ el.firstname+" "+el.lastname+"-"+el.age+" "+"<br>";
+    })
+    document.write(ans)
+</script>
