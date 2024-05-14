@@ -1,0 +1,28 @@
+<!-- **Question 2:**
+Create a function called `counter()` that returns another function. 
+The returned function, when invoked, should increment a counter variable defined in the 
+outer function's scope by 1. Use closures to implement the counter. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+     function counter() {
+  let count = 0;
+  return function() {
+    count++;
+    return count;
+  };
+}
+
+const incrementCounter = counter();
+console.log(incrementCounter()); 
+console.log(incrementCounter());
+</script>

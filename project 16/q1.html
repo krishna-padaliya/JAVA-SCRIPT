@@ -1,0 +1,25 @@
+<!-- **Question 1:**
+Write a function that takes a parameter and returns a new function. 
+The returned function should take another parameter and return the sum of the two parameters. 
+Use closures to achieve this. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function createAdder(x) {
+    return function(y) {
+        return x + y;
+    };
+}
+
+const addFive = createAdder(10);
+console.log(addFive(5));
+</script>

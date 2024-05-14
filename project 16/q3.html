@@ -1,0 +1,27 @@
+<!-- **Question 3:**
+Write a function `greet(name)` that takes a name as a parameter and returns 
+a greeting message using that name. Use a closure to remember the `name` parameter 
+and incorporate it into the returned greeting message. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function multiplier(factor) {
+  return function(number) {
+    return factor * number;
+  };
+}
+
+const double = multiplier(5);
+console.log(double(5));
+const triple = multiplier(3);
+console.log(triple(5));
+</script>
