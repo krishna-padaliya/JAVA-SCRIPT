@@ -1,0 +1,47 @@
+<!-- 1.Write a Program to find the minimum number from the given 3 numbers using nested if else. For example,
+
+value of the first number: 8
+value of the second number: 3
+value of the third number: 12
+
+Output:
+The minimum value is: 3 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="ans"></h1>
+</body>
+</html>
+<script>
+    let a=8;
+    let b=3;
+    let c=12;
+
+    if(a<b)
+    {
+        if(a<c)
+        {
+            document.getElementById("ans").innerHTML ="A is minimum: "+a;
+        }
+        else
+        {
+            document.getElementById("ans").innerHTML ="C is minimum: "+c;
+        }
+    }
+    else
+    {
+       if(b<c)
+       {
+        document.getElementById("ans").innerHTML ="B is minimum: "+b;
+       }
+       else
+       {
+        document.getElementById("ans").innerHTML ="C is minimum: "+c;
+       }
+    }
+</script>
