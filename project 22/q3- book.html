@@ -1,0 +1,40 @@
+<!-- ### Question 3: Book Inventory Management
+
+You are building a simple book inventory management system. You have an array of book objects, 
+each containing information about the book: `title`, `author`, `price`, and `quantityAvailable`.
+ Write a JavaScript function that takes the array of books and a budget as parameters. 
+ The function should return an array of books that can be purchased within the given budget 
+ 60 also should be available . If no books are affordable, return an empty array. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    
+ </body>
+ </html>
+
+ <script>
+    let book=[
+        {title:"The India Story",author:"Bimal Jalal",price:"2000",quantityAvailable:60},
+        {title:"Listen to Your Heart: The London Adventure",author:"Ruskin Bond",price:"1000",quantityAvailable:100},
+        {title:"A Place Called Home'",author:"Preeti Shenoy",price:"1500",quantityAvailable:50},
+        {title:"My Life as a Comrade",author:"K.K. Shailaja and Manju Sara Rajan",price:"2000",quantityAvailable:20},
+        {title:"Kargil: Ek Yatri Ki Jubani",author:"Shri Rishi Raj",price:"50",quantityAvailable:20}
+    ]
+    let booksell=[];
+        for(let i=0; i<book.length; i++)
+        {
+            if(book[i].price>=60)
+            {
+                booksell.push(book[i])
+            }
+        }
+        for(let i=0; i<booksell.length; i++)
+        {
+            console.log(booksell[i].title+" - "+booksell[i].author+" - "+booksell[i].price+" - "+booksell[i].quantityAvailable)
+        }
+ </script>
