@@ -1,0 +1,33 @@
+<!-- 1. Take 2 input box , now strictly check  if they are equal . If equal print 
+    "Value is equal" else print "Value is not equal" -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>equal</title>
+ </head>
+ <body>
+    <h1><input placeholder="Enter frist number" id="num1"></h1>
+    <h1><input placeholder="Enter Second number" id="num2"></h1>
+    <h1 id="ans1"></h1>
+    <h1 id="ans2"></h1>
+ </body>
+ </html>
+ <script>
+    let op1 = document.getElementById('num1').value;
+    let op2 = document.getElementById('num2').value;
+    
+    if(op1===op2)
+    {
+        document.write("Value is equal")
+    }
+    else
+    {
+        document.write("Value is not equal")
+    }
+
+    document.getElementById("op1").innerHTML=ans1;
+    document.getElementById("op2").innerHTML=ans2;
+ </script>

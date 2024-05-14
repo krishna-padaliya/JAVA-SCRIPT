@@ -1,0 +1,29 @@
+<!-- 4. Take an input box, if number is greater than equal to 18 print 
+    "You can vote!" else "You cannot vote" -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Vote</title>
+    </head>
+    <body>
+       <h1><input placeholder="Enter your age" id="num1"></h1>
+       <h1 id="ans1"></h1>
+    </body>
+    </html>
+    <script>
+       let op1 = document.getElementById('num1').value;
+       
+       if(op1>=18)
+       {
+           document.write("You can vote!")
+       }
+       else
+       {
+           document.write("You cannot vote")
+       }
+   
+       document.getElementById("op1").innerHTML=ans1;
+    </script>

@@ -1,0 +1,29 @@
+<!-- 2.Take a input box if temperature is greater than 25 print "It's hot outside." 
+    else print "It's not too hot" -->
+    
+    <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temperature</title>
+ </head>
+ <body>
+    <h1><input placeholder="Enter Temperature" id="num1"></h1>
+    <h1 id="ans1"></h1>
+ </body>
+ </html>
+ <script>
+    let op1 = document.getElementById('num1').value;
+    
+    if(op1>=25)
+    {
+        document.write("It's hot outside")
+    }
+    else
+    {
+        document.write("It's not too hot")
+    }
+
+    document.getElementById("op1").innerHTML=ans1;
+ </script>
