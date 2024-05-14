@@ -1,0 +1,36 @@
+<!-- Create an abstract class Employee with properties name, basicSalary and abstract methods 
+calculateBonus(), calculateFinalSalary(), and calculateHRA(). -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    class Employee{
+        constructor(name,salary){
+            this.name=name;
+            this.salary=salary;
+            this.bouns=1000;
+            
+            this.calculateBonus=function(){
+                return this.salary*0.1;
+            }
+            this.calculateFinalSalary=function(){
+                return this.salary+this.bouns
+            }
+            this.calculateHRA=function(){
+                return this.salary*0.5
+            }
+  }
+        }
+    const emp=new Employee("krishna",10000)
+    console.log("calculateBonus:"+emp.calculateBonus())
+    console.log("calculateFinalSalary:"+emp.calculateFinalSalary())
+    console.log("calculateHRA:"+emp.calculateHRA())
+</script>

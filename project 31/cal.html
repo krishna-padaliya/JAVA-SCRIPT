@@ -1,0 +1,37 @@
+<!-- Extend the previous example to calculate perimeter for Square, and circumference for 
+Circle in addition to the area for all shapes. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+     class Square{
+        constructor(value){
+            
+            this.value=value
+        }
+        calculateArea(){
+            return this.value*4;
+        }
+    }
+    class Circle{
+        constructor(radius){
+            
+            this.radius=radius
+        }
+        calculateArea(){
+            return 2*Math.PI*this.radius;
+        }
+    }
+    let square=new Square(4)
+    console.log("perimeter for Square is:"+square.calculateArea())
+    let circle=new Circle(4)
+    console.log("circumference for Circle is:"+circle.calculateArea())
+</script>

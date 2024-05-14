@@ -1,0 +1,49 @@
+<!-- Create classes for Square, Rectangle, and Circle. Each class should have a method named
+ calculateArea that calculates the area of the respective shape -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    
+ </body>
+ </html>
+ <script>
+    class Square{
+        constructor(side){
+            
+            this.side=side
+        }
+        calculateArea(){
+            return this.side*this.side;
+        }
+    }
+    class Rectangle{
+        constructor(length,width){
+            
+            this.length=length;
+            this.width=width;
+        }
+        calculateArea(){
+            return this.length*this.width;
+        }
+    }
+    class Circle{
+        constructor(radius){
+            
+            this.radius=radius
+        }
+        calculateArea(){
+            return Math.PI*this.radius*this.radius;
+        }
+    }
+    let square=new Square(2)
+    console.log("square is:"+square.calculateArea())
+    let  rectangle=new  Rectangle(2,2)
+    console.log(" Rectangle is:"+ rectangle.calculateArea())
+    let circle=new Circle(2)
+    console.log("Circle is:"+circle.calculateArea())
+ </script>
