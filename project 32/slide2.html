@@ -1,0 +1,56 @@
+<!-- **Task 1: Create 2 Sliders**
+
+Using HTML, CSS, and JavaScript, create an automatic image slider. The slider should display 
+at least five images and automatically transition to the next image every 3 seconds. 
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         img{
+             display: none;
+             width: 100%;
+             height: 500px;
+         }
+     </style>
+ </head>
+ <body>
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Events/img23/Jupiter23/Homepage/Phase3/J23_P3B_PC_NTA_Hero_2x_V3._CB573693536_.jpg" alt="">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2023/Jupiter/JupiterGW/P3_Diwali-lights_PC_3000x1200_UNREC_BankStripB._CB573763526_.jpg" alt="">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/GW/Lastdays2/Phase_3_Tallhero_3000x1200._CB574261257_.jpg" alt="">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/PC_Hero_3000x1200_diwali_gifting._CB574261663_.jpg" alt="">
+     <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Toys/GW/Jupiter2023GW/Phase3/UNREC-OUTDOOR-BANK-B-2X-1stNov._CB573762568_.jpg" alt="">
+     <button onclick="stopfun()" style="margin-left: 50%; margin-top: 30px; height: 30px;">slide to stop</button>
+     
+ </body>
+ </html>
+ <script>
+     var slides=document.querySelectorAll("img");
+     var sliderIndex=0;
+     var interval;
+ 
+     function showslider(index){
+         for(var i=0; i<slides.length; i++){
+             slides[i].style.display='none';
+         }
+         slides[index].style.display='block';
+     }
+ 
+     function startslide(){
+         interval=setInterval(()=>{
+             showslider(sliderIndex);
+             sliderIndex++;
+             if(sliderIndex >= slides.length){
+                 sliderIndex=0
+             }
+         },1000)
+     }
+    
+     function stopfun(){
+         clearInterval(interval)
+     }
+     startslide()
+ </script>
