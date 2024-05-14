@@ -1,0 +1,97 @@
+<!-- 
+4. Write a JavaScript program to create the following patterns.
+
+*
+* *
+* * *
+* * * *
+
+
+* * * *
+* * * *
+* * * *
+* * * *
+
+* * * *
+* * *
+* * 
+*
+
+1 2 3
+1 2 3
+1 2 3
+
+1 1 1
+2 2 2
+3 3  3 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+     let pattern1 = "";
+    for(let i = 1 ; i <= 4  ; i++)
+    {
+        for(let j = 1 ; j <= i ; j++){
+            pattern1 += "*";
+        }
+        pattern1 += "\n"
+    }
+    console.log(pattern1)
+</script>
+
+<script>
+    let pattern2 = "";
+    for(let i = 1 ; i <= 4  ; i++)
+    {
+        for(let j = 1 ; j <= 4 ; j++){
+            pattern2 += "*";
+        }
+        pattern2 += "\n"
+    }
+    console.log(pattern2)
+</script>
+
+<script>
+    let pattern3 = "";
+   for(let i = 1 ; i <= 4  ; i++)
+   {
+       for(let j = 4 ; j >= i ; j--){
+           pattern3 += "*";
+       }
+       pattern3 += "\n"
+   }
+   console.log(pattern3)
+</script>
+
+ <script>
+    let pattern4 = "";
+    for(let i = 1 ; i <= 3  ; i++)
+    {
+        for(let j = 1 ; j <= 3 ; j++){
+            pattern4 += j;
+        }
+        pattern4 += "\n"
+    }
+    console.log(pattern4)
+</script> 
+
+<script>
+    let pattern5 = "";
+    for(let i = 1 ; i <= 3  ; i++)
+    {
+        for(let j = 1 ; j <= 3 ; j++){
+            pattern5 += i;
+        }
+        pattern5 += "\n"
+    }
+    console.log(pattern5)
+</script>
