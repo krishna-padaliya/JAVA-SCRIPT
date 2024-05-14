@@ -1,0 +1,43 @@
+<!-- **Question2:**Create a class hierarchy for vehicles. Implement a base class `Vehicle` with properties `brand` and `color`. Define a method `startEngine()` in the `Vehicle` class, which outputs a message indicating that the engine has started.
+
+Create two derived classes: `Car` and `Motorcycle`. The `Car` class should inherit from the `Vehicle` class and have an additional property `numDoors` (number of doors in the car). Override the `startEngine()` method in the `Car` class to output a car-specific message about starting the engine.
+
+The `Motorcycle` class should also inherit from the `Vehicle` class and have an additional property `hasSidecar` (a boolean indicating whether the motorcycle has a sidecar). Override the `startEngine()` method in the `Motorcycle` class to output a motorcycle-specific message about starting the engine.
+
+Create instances of the `Car` and `Motorcycle` classes, demonstrate how they inherit properties from the `Vehicle` class, and call their respective `startEngine()` methods to display their specific messages. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    class vehicle{
+        constructor(brand,color){
+            this.brand = brand;
+            this.color =color;
+        }
+        numDoor(){
+            console.log(this.brand+" 2 Door of the car")
+        }
+    }
+    class Car extends vehicle{
+        startEngine(){
+            console.log(this.brand+" starting the engine.")
+        }
+    }
+    class Motorcycle extends Car{
+        hasSidecar(){
+            console.log(this.brand+" The motorcycle has one sidecar")
+        }
+    }
+    let vehicles = new Motorcycle("Thar")
+    vehicles.numDoor();
+    vehicles.startEngine();
+    vehicles.hasSidecar();
+</script>

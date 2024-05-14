@@ -1,0 +1,54 @@
+<!-- **Question1:**Implement a class hierarchy for animals. Create a base class `Animal` with 
+    properties `name` and `type` representing the name of the animal and its type 
+    (e.g., mammal, reptile). Define a method `makeSound()` in the `Animal` class, which 
+    outputs a generic animal sound.
+Create two derived classes: `Bird` and `Fish`. The `Bird` class should inherit from the 
+`Animal` class and have an additional property `canFly` (a boolean indicating whether the 
+bird can fly). Override the `makeSound()` method in the `Bird` class to output a bird-specific
+ sound.
+
+The `Fish` class should also inherit from the `Animal` class and have an additional property 
+`habitat` (e.g., freshwater, saltwater). Override the `makeSound()` method in the `Fish` class 
+to output a fish-specific sound.
+
+Create instances of the `Bird` and `Fish` classes, demonstrate how they inherit properties
+ from the `Animal` class, and call their respective `makeSound()` methods to display their
+  specific sounds.
+
+Certainly! Here's another question that builds upon the previous example: -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    class Animal{
+      constructor (name){
+      this.name=name;
+      // this.type=type;
+      }
+      makeSound(){
+        console.log(this.name+" Mellowww!!")
+      }
+    }
+    class Bird extends Animal{
+      SparrowSound(){
+        console.log(this.name+" chiichiiichiii!!")
+      }
+    }
+    class Fish extends Bird{
+      sharkSound(){
+        console.log(this.name+" auhhhhhhh!!")
+      }
+    }
+    var make=new Fish("shapoo")
+    make.makeSound()
+    make.SparrowSound()
+    make.sharkSound()
+</script>
